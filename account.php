@@ -23,7 +23,9 @@ class Account{
             return "failed";
         }
 
-        if($amount <= 0) return "Please enter valid amount atleast $1";
+        if($amount <= 0) {
+            return "Please enter valid amount atleast $1";
+        }
 
         $this->balance+= $amount;
 
